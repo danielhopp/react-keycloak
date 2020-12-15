@@ -85,8 +85,7 @@ export function createReactKeycloakProvider(ReactKeycloakContext) {
       // Avoid double-refresh if state hasn't changed
       if (
         !prevInitialized ||
-        isLoading !== prevLoading ||
-        newToken !== prevToken
+        isLoading !== prevLoading
       ) {
         this.setState({
           initialized: true,
